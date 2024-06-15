@@ -4,13 +4,13 @@ const { TOKEN, PREFIX } = require('./config.json');
 const client = new Client();
 
 
-const AdminsUsers = ["910544911131115551", "851696808437743616", "783493253034541136" ];
-const PingCommand = `${PREFIX}ping`;
-const AfkCommand = `${PREFIX}afk`;
-const FollowCommand = `${PREFIX}follow`;
-const SendDmcmmand = `${PREFIX}sendm`
-const PermCommand = `${PREFIX}check`
-let connection = null;
+const AdminsUsers = ["910544911131115551", "851696808437743616", "783493253034541136" ]; // admins who can controle the bot
+const PingCommand = `${PREFIX}ping`; // ping command
+const AfkCommand = `${PREFIX}afk`; // afk command
+const FollowCommand = `${PREFIX}follow`; // follow command
+const SendDmcmmand = `${PREFIX}sendm` // sendm command
+const PermCommand = `${PREFIX}check` // check command 
+let connection = null; 
 let follower = null;
 
 client.on('ready', () => {
